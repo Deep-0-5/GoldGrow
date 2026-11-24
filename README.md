@@ -138,26 +138,6 @@ python main.py --all
 
 ---
 
-## ☁️ Deployment Guide (Render.com)
-
-1. **Push your code to GitHub:**
-   ```bash
-   git add .
-   git commit -m "Deploy GoldGrow"
-   git push -u origin main
-   ```
-2. **Deploy on Render:**
-   * Go to [Render.com](https://render.com/) and create a **New Web Service**.
-   * Connect your `Deep-0-5/GoldGrow` repository.
-   * **Build Command:** `pip install -r requirements.txt`
-   * **Start Command:** `uvicorn app:app --host 0.0.0.0 --port $PORT`
-   * Under **Environment Variables**, add:
-     * `FRED_API_KEY`
-     * `TIINGO_API_KEY`
-3. Click **Deploy Web Service** to get your public HTTPS URL!
-
----
-
 ## 📊 Evaluation & Quantitative Edge
 
 * **The Stochastic Noise Reality:** Daily financial prices carry substantial micro-noise. In quantitative finance, raw all-day directional forecasting typically sits between **52% and 55%**.
